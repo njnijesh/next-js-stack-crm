@@ -12,11 +12,13 @@ export default function Accordion({
     <>
       <div
         onClick={() => onItemClick(index)}
-        className={`items-center flex justify-between ${
-          active ? "bg-white text-gray-900" : "text-gray-500"
+        className={` bg-white items-center flex justify-between dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 ${
+          active
+            ? "text-gray-900 dark:text-white"
+            : "text-gray-500 dark:text-gray-400"
         }`}
       >
-        <h3 className=" w-full py-5 font-medium text-left bg-white border-b border-gray-200">
+        <h3 className=" w-full py-5 font-medium text-left bg-white border-b border-gray-200 dark:bg-gray-900 dark:text-white">
           {data.title}
         </h3>
         <ChevronUp

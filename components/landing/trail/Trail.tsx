@@ -8,13 +8,13 @@ const Trail = () => {
   };
 
   return (
-    <div className="w-full bg-gray-50">
+    <div className="w-full bg-gray-50 dark:bg-gray-900">
       <div className="max-w-screen-xl px-4 py-8 mx-auto lg:py-16 lg:px-6">
         <div className="max-w-screen-sm mx-auto text-center">
-          <h2 className="mb-4 text-3xl font-black leading-tight tracking-tight text-gray-900">
+          <h2 className="mb-4 text-3xl font-black leading-tight tracking-tight text-gray-900 dark:text-white">
             {title}
           </h2>
-          <p className="mb-6 font-light text-gray-500 md:text-lg">
+          <p className="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">
             {description}
           </p>
           <Button

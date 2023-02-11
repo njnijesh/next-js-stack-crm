@@ -62,10 +62,10 @@ export default function Footer() {
         <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-4">
           {links?.map((item) => (
             <div key={item.title}>
-              <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
+              <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
                 {item.title}
               </h3>
-              <ul className="text-gray-500">
+              <ul className="text-gray-500 dark:text-gray-400">
                 {item?.links?.map((link) => (
                   <li className="mb-4" key={link.title}>
                     <Link href={link.url}>{link.title}</Link>
@@ -75,17 +75,17 @@ export default function Footer() {
             </div>
           ))}
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+        <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8 dark:border-gray-700" />
 
         <div className="text-center">
           <Logo size="text-2xl" />
-          <span className="block text-sm mt-5 text-center text-gray-500">
+          <span className="block text-sm mt-5 text-center text-gray-500 dark:text-gray-400">
             {copyright}
           </span>
           <ul className="flex justify-center mt-5 space-x-5">
             {socials?.map((social, index) => (
               <Link
-                className="text-gray-500 hover:text-gray-900"
+                className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100"
                 key={index}
                 href={social.url}
               >

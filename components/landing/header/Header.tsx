@@ -45,7 +45,7 @@ export default function Header() {
 
   return (
     <header className="fixed w-full bg-white">
-      <nav className="bg-white border-gray-200 py-2.5">
+      <nav className="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
         <div className="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto px-4">
           <Logo />
           <RenderIf condition={width > 1024}>

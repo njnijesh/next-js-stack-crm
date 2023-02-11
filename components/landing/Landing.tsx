@@ -10,7 +10,7 @@ import Header from "./header";
 
 export default function Landing() {
   return (
-    <div className="w-full flex flex-col box-border">
+    <div className="w-full flex flex-col box-border dark:bg-gray-900">
       <Header />
       <Hero />
       <Companies />

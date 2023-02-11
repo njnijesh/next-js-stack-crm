@@ -8,7 +8,7 @@ export default function CompanyLogo({ size }: types.Props) {
     <Link href="/" className="flex items-center justify-center">
       <Logo classNames="h-6 mr-3 sm:h-9" />
       <span
-        className={`self-center font-semibold whitespace-nowrap text-gray-900 ${
+        className={`self-center font-semibold whitespace-nowrap text-gray-900 dark:text-white ${
           size ? size : "text-xl"
         }`}
       >
